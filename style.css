@@ -118,7 +118,7 @@ a {
 }
 
 .logo {
-    font-size: 190%;
+    font-size: 160%;
     color: white;
     text-decoration: none;
 }
@@ -131,7 +131,7 @@ a {
 }
 
 .nav-links a:hover {
-    color: #fcba03;
+    color: white;
 }
 
 .resume section, #bio {
