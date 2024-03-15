@@ -1,1 +1,0 @@
-# 7Ashdod7.github.io
