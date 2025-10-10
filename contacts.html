@@ -5,9 +5,9 @@
     <!-- ALL meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="author" content="Лаптев Никита">
+    <meta name="author" content="">
     
-    <title>Контакты</title>
+    <title>Write to us</title>
 
     <!-- ALL links -->
     <link rel="stylesheet" href="style.css">
@@ -19,53 +19,53 @@
     
     <!-- Navigation -->
     <nav class="navbar">
-        <a href='#page-top' class="logo">Сайт-портфолио</a>
+        <a href='#page-top' class="logo">Website</a>
         <button class="menu-toggle" onclick="toggleMenu()"><b>Меню</b></button>
         <section class="nav-links">
-            <a href="index.html">На главную</a>
-            <a href="resume.html">Резюме</a>
-            <a href="gallery.html">Галерея</a>
+            <a href="index.html">Main page</a>
+            <a href="resume.html">Page 1</a>
+            <a href="gallery.html">Gallery</a>
         </section>
     </nav>
 
     <!-- Contact form -->
     <main class="contact-form">
         <section>
-            <h2>Заполните если хотите со мной связаться</h2>
+            <h2>Fill in if you want to contact</h2>
             <form id="form">
-                <label for="name">Имя:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="phone">Номер телефона:</label>
+                <label for="phone">Telephone number:</label>
                 <input type="text" id="phone" name="phone">
-                <label for="message">Ваше сообщение:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <input type="submit" value="Отправить">
+                <input type="submit" value="Share">
             </form>
         </section>
 
     <!-- Другие способы связи -->
         <section>
-            <h2>Также можно найти меня здесь:</h2>
+            <h2>Other ways to connect:</h2>
             <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                    <a href="tel:+79329645555">
+                    <a href="tel:">
                         <i class="Phone">📞</i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="http://vk.com/TopG777">
+                    <a href="">
                         <i class="VK">VK</i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="http://t.me/Papimunanuo">
+                    <a href="">
                         <i class="Telegram">TG</i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="mailto:stud277787@vyatsu.ru">
+                    <a href="">
                         <i class="Mail">📩</i>
                     </a>
                 </li>
@@ -75,7 +75,7 @@
 
     <!-- Copyright -->
     <footer>
-        <p>Copyright &copy; Сайт-портфолио Лаптева Никиты 2024</p>
+        <p>Copyright &copy; Website 2025</p>
     </footer>
 
     <!-- JS include -->
@@ -84,15 +84,16 @@
     <script>
         emailjs.init("OBFr8KmgnoC_loyAX");
         document.getElementById('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Не обновляйте страницу, пока сообщение не отправлено
+        event.preventDefault(); // Do not refresh the page until the message is sent
         emailjs.sendForm('service_je4r3r5', 'template_1bfdxrg', this)
         .then(function() {
-            alert('Сообщение успешно отправлено!');
+            alert('Message sent successfully!');
         }, function(error) {
-            alert('Ошибка отправки: ' + error);
+            alert('Delivery failure: ' + error);
         });
         });
     </script>
 
 </body>
 </html>
+
